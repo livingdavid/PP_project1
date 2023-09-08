@@ -4,8 +4,8 @@ public class Word {
 
     private int id;
     private int level;
-    private string word;
-    private string meaning;
+    private String word;
+    private String meaning;
 
     Word(){}
     Word(int id, int level, String word, String meaning){
@@ -30,19 +30,19 @@ public class Word {
         this.level = level;
     }
 
-    public string getWord() {
+    public String getWord() {
         return word;
     }
 
-    public void setWord(string word) {
+    public void setWord(String word) {
         this.word = word;
     }
 
-    public string getMeaning() {
+    public String getMeaning() {
         return meaning;
     }
 
-    public void setMeaning(string meaning) {
+    public void setMeaning(String meaning) {
         this.meaning = meaning;
     }
 
