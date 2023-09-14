@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class WordManager {
     Scanner s = new Scanner(System.in);
+    WordCRUD wordCRUD;
     /*
     *** 영단어 마스터 ***
             ********************
@@ -17,6 +18,9 @@ public class WordManager {
 0. 나가기
 ********************
     */
+    WordManager(){
+        wordCRUD = new WordCRUD(s);
+    }
     public int selectMenu(){
         System.out.print("*** 영단어 마스터 ***\n"
                 +"********************\n"
@@ -34,20 +38,33 @@ public class WordManager {
         return s.nextInt();
     }
     public void start() {
+
+        wordCRUD.loadFile();
         while (true) {
             int menu = selectMenu();
             if (menu == 0) break;
             if (menu == 4){
-                wordCRUD.addWord();//create
+                wordCRUD.addItem();//create
             } else if (menu == 1) {
-                wordCRUD.listAll();
+                //wordCRUD.listAll();
+                //list
+            }
+            else if (menu == 2) {
+                wordCRUD.searchLevel();
+                //list
+            }
+            else if (menu == 3) {
+                wordCRUD.searchWord();
                 //list
             }
             else if (menu == 5) {
                 wordCRUD.updateItem();
             }
             else if (menu == 6) {
-                wordCRUD.listAll();
+                wordCRUD.deleteItem();
+            }
+            else if (menu == 7) {
+                wordCRUD.saveFile();
             }
             System.out.println(menu);
         }
