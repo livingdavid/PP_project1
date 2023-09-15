@@ -48,11 +48,21 @@ public class WordCRUD implements ICRUD{
     public void selectOne(int id) {
 
     }
+    public void listAll() {
+        int j = 0;
+        System.out.println("--------------------------------");
+        for (int i = 0; i<list.size(); i++){
+            System.out.print((j+1)+ " ");
+            System.out.println(list.get(i).toString());
+            j++;
+        }
+        System.out.println("--------------------------------");
 
+    }
     public ArrayList<Integer> listAll(String keyword){
         ArrayList<Integer> idlist = new ArrayList<>();
         int j =0;
-        System.out.println("----------------");
+        System.out.println("--------------------------------");
         for (int i = 0; i<list.size(); i++){
             String word = list.get(i).getWord();
             if(!word.contains(keyword)) continue;;
@@ -61,13 +71,13 @@ public class WordCRUD implements ICRUD{
             idlist.add(i);
             j++;
         }
-        System.out.println("----------------");
+        System.out.println("--------------------------------");
         return idlist;
     }
 
     public void listAll(int level) {
         int j =0;
-        System.out.println("----------------");
+        System.out.println("--------------------------------");
         for (int i = 0; i<list.size(); i++){
             int ilevel = list.get(i).getLevel();
             if(ilevel != level ) continue;;
@@ -75,7 +85,7 @@ public class WordCRUD implements ICRUD{
             System.out.println(list.get(i).toString());
             j++;
         }
-        System.out.println("----------------");
+        System.out.println("--------------------------------");
     }
 
 
@@ -163,4 +173,6 @@ public class WordCRUD implements ICRUD{
         String keyword = s.next();
         listAll(keyword);
     }
+
+
 }
