@@ -139,8 +139,6 @@ public class WordCRUD implements ICRUD{
             }
             br.close();
             System.out.println("==>" + count + "개 로딩완료!!!");
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
