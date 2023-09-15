@@ -15,4 +15,4 @@
 2| temporary|일시적인
 2| soothe|진정시키다
 2| persuade|설득하다
-1| dog|소
+1| dog|개
