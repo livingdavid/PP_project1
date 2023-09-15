@@ -10,3 +10,8 @@
 2| extract|추출하다
 1| ball|공
 1| apple|사과
+1| repeat|반복하다
+2| exceed|초과하다
+2| temporary|일시적인
+2| soothe|진정시키다
+2| persuade|설득하다
