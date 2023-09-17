@@ -1,6 +1,7 @@
 # PP_project1
 lab1
 .
+
 [수준별 단어읽기]
 .
 Level 1
@@ -37,3 +38,9 @@ Level 3
 파일 불러오기
 ![8](https://github.com/livingdavid/PP_project1/assets/130739811/ac69b53f-7e5a-497f-94c8-405369fc3084)
 
+
+[단어 목록 보기]
+![1](https://github.com/livingdavid/PP_project1/assets/130739811/401decde-70f3-4347-a27d-22974408f0e6)
+
+[단어 추가]
+![4](https://github.com/livingdavid/PP_project1/assets/130739811/9c0b0326-1d27-4aa8-8377-074e3ed92e66)
