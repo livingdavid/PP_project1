@@ -16,3 +16,5 @@
 2| soothe|진정시키다
 2| persuade|설득하다
 1| dog|개
+1| door|문
+1| open|열다
