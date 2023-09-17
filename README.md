@@ -1,4 +1,4 @@
 # PP_project1
 lab1
 
-https://github.com/livingdavid/PP_project1/blob/master/screenshot/2-1.png?raw=true
+![2-1](https://github.com/livingdavid/PP_project1/assets/130739811/73526049-038d-4437-b0b2-f19d13eced0b)
