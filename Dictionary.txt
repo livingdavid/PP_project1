@@ -18,3 +18,4 @@
 1| dog|개
 1| door|문
 1| open|열다
+1| close|닫다
